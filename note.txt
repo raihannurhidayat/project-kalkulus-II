@@ -1,0 +1,23 @@
+ <div className="container">
+        <h1 className="header">Project</h1>
+        <input onChange={handleChange} value={temp} type="text" required />
+        <button onClick={handleClick}>Calculate</button>
+        {deret.length > 0 &&
+          deret.map((item, index) => (
+            <div key={index}>
+              <h1>
+                Suku ke - {index + 1} = {item}
+              </h1>
+            </div>
+          ))}
+        {deret[0]}
+        {deret.length > 0 && (
+          <>
+            <div>
+              nilai a = {deret[0]}
+              nilai b = {deret[1] - deret[0]}
+            </div>
+            <div>SN : {sn}</div>
+          </>
+        )}
+      </div>
