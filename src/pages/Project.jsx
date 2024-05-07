@@ -28,7 +28,6 @@ const Project = () => {
 
   if (deret.length > 0) {
     validate(deret, setDeret, "aritmatika", setAlert);
-    // console.log(deret.join(", "))
   }
 
   const handleSearchSuku = (n, deret) => {
