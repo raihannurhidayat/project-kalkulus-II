@@ -54,10 +54,7 @@ const Project = () => {
 
   // diantara start
   const handleClickDiantara = () => {
-    console.log(temp.split(","));
-
     const ingredient = temp.split(",");
-
     const last = Number(ingredient[ingredient.length - 1]);
     const a = Number(ingredient[0]);
     const b = (last - a) / (ingredient.length - 1);
@@ -71,6 +68,10 @@ const Project = () => {
     // validate(resultFinal,setDeret,"aritmatika", setAlert)
 
     setDeret(resultFinal);
+    if(resultFinal[0]=== "NaN"){
+      console.log("Error bang")
+      setAlert((prev) => !prev)
+    }
   };
   // diantara end
 
@@ -269,7 +270,6 @@ const Project = () => {
             </div>
           </div>
           {/* Diantara end */}
-
           {/* result diantara start */}
           {deret.length > 0 && (
             <div className="result-section">
