@@ -7,7 +7,7 @@ const Search = ({ handleSeachSuku, deret }) => {
     setSearchSuku(e.target.value);
   };
   return (
-    <div class="search">
+    <div className="search">
       <input
         placeholder="Masukan Nilai N"
         onChange={handleChange}
@@ -25,7 +25,7 @@ const Search = ({ handleSeachSuku, deret }) => {
           }
         }}
       >
-        Go
+        Cari
       </button>
     </div>
   );

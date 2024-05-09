@@ -1,10 +1,13 @@
-import React from 'react'
-import "../style/landingPage"
+import React from "react";
+import "../style/landingPage.css";
+
 
 const LandingPage = () => {
   return (
-    <div>LandingPage</div>
-  )
-}
+    <>
+    <div>Ini landing page</div>
+    </>
+  );
+};
 
-export default LandingPage
+export default LandingPage;
