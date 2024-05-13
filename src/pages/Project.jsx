@@ -66,12 +66,14 @@ const Project = () => {
     const resultFinal = resultDinamis.join(",").split(",");
 
     // validate(resultFinal,setDeret,"aritmatika", setAlert)
-
-    setDeret(resultFinal);
+    console.log(resultFinal)
     if(resultFinal[0]=== "NaN"){
       console.log("Error bang")
       setAlert((prev) => !prev)
+      setDeret([])
+      return
     }
+    setDeret(resultFinal);
   };
   // diantara end
 
@@ -287,13 +289,16 @@ const Project = () => {
                     {deret.map((item, index) => {
                       if (index != 0 && index != deret.length - 1) {
                         return (
-                          <p>
+                          <p key={index}>
                             Nilai {temp.split(",")[index]} = {item}
                           </p>
                         );
                       }
                     })}
                   </div>
+                </div>
+                <div className="result-section-deret">
+                  <p>Deret Anda yang utuh adalah = {deret.join(",")}</p>
                 </div>
               </div>
             </div>

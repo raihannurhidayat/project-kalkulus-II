@@ -6,7 +6,7 @@ const MainPage = () => {
   return (
     <>
     <Navbar />
-    <Outlet />
+    <Outlet context={{text: "hello"}} />
     </>
   )
 }
