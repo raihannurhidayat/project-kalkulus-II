@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "../style/project.css";
 import validate from "../service/validate";
 import { snAritmatika, snAritmatikaN } from "../service/rumusSn";
@@ -6,6 +6,8 @@ import BadgeNav from "../components/BadgeNav";
 import image from "../../public/img/image-1.png";
 import Alert from "../components/Alert";
 import Search from "../components/Search";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Project = () => {
   const [deret, setDeret] = useState([]);
@@ -66,16 +68,20 @@ const Project = () => {
     const resultFinal = resultDinamis.join(",").split(",");
 
     // validate(resultFinal,setDeret,"aritmatika", setAlert)
-    console.log(resultFinal)
-    if(resultFinal[0]=== "NaN"){
-      console.log("Error bang")
-      setAlert((prev) => !prev)
-      setDeret([])
-      return
+    console.log(resultFinal);
+    if (resultFinal[0] === "NaN") {
+      console.log("Error bang");
+      setAlert((prev) => !prev);
+      setDeret([]);
+      return;
     }
     setDeret(resultFinal);
   };
   // diantara end
+
+  useEffect(() => {
+    AOS.init();
+  }, []);
 
   return (
     <>
@@ -85,7 +91,11 @@ const Project = () => {
         </div>
       )}
       {display === "aritmatika" && (
-        <div className={`container ${alert && "blur"}`}>
+        <div
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          className={`container ${alert && "blur"}`}
+        >
           {/* calculate start */}
           <div className="wrap">
             <div className="calculate-section">
@@ -138,7 +148,11 @@ const Project = () => {
 
           {/* Result Start */}
           {deret.length > 0 && (
-            <div className="result-section">
+            <div
+              className="result-section"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+            >
               <div>
                 <div>
                   <h3 className="result-section-header">
@@ -177,7 +191,11 @@ const Project = () => {
 
           {/* SN start */}
           {deret.length > 0 && (
-            <div className="sn-section">
+            <div
+              className="sn-section"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+            >
               <div className="sn-section-wrap">
                 <p className="sn-section-p">
                   Dengan menggunakan rumus Sn = n/2 (2a + (n-1)b) dengan
@@ -220,7 +238,11 @@ const Project = () => {
       )}
 
       {display === "diantara" && (
-        <div className={`container ${alert && "blur"}`}>
+        <div
+          data-aos="fade-right"
+          data-aos-duration="1500"
+          className={`container ${alert && "blur"}`}
+        >
           {/* Diantara start */}
           <div className="wrap">
             <div className="calculate-section">
@@ -244,7 +266,7 @@ const Project = () => {
                 <h3 className="calculate-section-header">
                   Selamat Datang <br /> Silahkan Temukan{" "}
                   <span className="calculate-section-header-span">
-                    Nilai Diantara
+                    Nilai Diantara Deret
                   </span>{" "}
                   Anda
                 </h3>
@@ -274,7 +296,11 @@ const Project = () => {
           {/* Diantara end */}
           {/* result diantara start */}
           {deret.length > 0 && (
-            <div className="result-section">
+            <div
+              className="result-section"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+            >
               <div>
                 <div>
                   <h3 className="result-section-header">

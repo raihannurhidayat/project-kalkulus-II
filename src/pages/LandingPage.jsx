@@ -46,7 +46,7 @@ const LandingPage = () => {
 
     gsap.to(titleRef.current, {
       duration: 2,
-      text: `Project Kalkulus II <span>Kelompok 2</span>`,
+      text: `Project Kalkulus II <span>Kelompok 4</span>`,
       ease: "power1.inOut",
     });
   }, []);
@@ -121,7 +121,7 @@ const LandingPage = () => {
             <p className="judulmk">MATERI DERET</p>
             <button
               className="btn"
-              onClick={() => navigate("/materiaritmetika")}
+              onClick={() => navigate("/materi/aritmatika")}
               style={{
                 backgroundColor: "#615549",
                 borderColor: "white",
@@ -132,7 +132,7 @@ const LandingPage = () => {
             </button>
             <button
               className="btn"
-              onClick={() => navigate("/materigeometri")}
+              onClick={() => navigate("/materi/geometri")}
               style={{
                 backgroundColor: "#615549",
                 borderColor: "white",
@@ -158,14 +158,14 @@ const LandingPage = () => {
             <h1 className="judulmk">KALKULATOR DERET</h1>
             <button
               className="btn"
-              onClick={() => navigate("/kalkulatoraritmetika")}
+              onClick={() => navigate("/aritmatika")}
               style={{ backgroundColor: "#615549", borderColor: "white" }}
             >
               Aritmetika
             </button>
             <button
               className="btn"
-              onClick={() => navigate("/kalkulatorgeometri")}
+              onClick={() => navigate("/geometri")}
               style={{ backgroundColor: "#615549", borderColor: "white" }}
             >
               Geometri

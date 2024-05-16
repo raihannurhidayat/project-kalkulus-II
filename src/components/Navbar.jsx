@@ -7,11 +7,14 @@ import "aos/dist/aos.css";
 import { FiMenu } from "react-icons/fi";
 import { RxCross1 } from "react-icons/rx";
 import { IoLogoXing } from "react-icons/io5";
+import { useLocation } from "react-router-dom";
 
 const Navbar = () => {
   const [showNavbar, setShowNavbar] = useState(false);
   const [landingPage, setLandingPage] = useState(true);
 
+  const location = useLocation()
+  
   const navbarRef = useRef(null);
 
   const handleShowNavbar = () => {
@@ -44,7 +47,7 @@ const Navbar = () => {
                   Home
                 </NavLink>
               </li>
-              {landingPage && (
+              {landingPage && location.pathname !== "/materi/aritmatika" && location.pathname !== "/materi/geometri" && location.pathname !== "/aritmatika"  && location.pathname !== "/geometri" && (
                 <>
                   <li>
                     <HashLink smooth to="#about">
@@ -70,7 +73,7 @@ const Navbar = () => {
                 </NavLink>
               </li>
               <li>
-                <NavLink onClick={() => setLandingPage(false)} to="/projects">
+                <NavLink onClick={() => setLandingPage(false)} to="/geometri">
                   Geometri
                 </NavLink>
               </li>

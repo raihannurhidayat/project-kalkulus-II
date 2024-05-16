@@ -1,0 +1,135 @@
+main {
+  padding-top: 200px; /* Adjusted to accommodate fixed navbar */
+  padding: 100px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Hero section styling */
+.hero {
+  background: linear-gradient(to right, #c8ac8a, #ac8657);
+  color: #fff;
+  padding: 50px 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.hero h1 {
+  margin-bottom: 10px;
+  font-size: 2.5em;
+}
+
+.hero p {
+  font-size: 1.2em;
+}
+
+/* Content section styling */
+.content {
+  margin-top: 20px;
+}
+
+.content h2 {
+  margin-bottom: 10px;
+  font-size: 2em;
+  color: #343a40;
+}
+
+/* Deret Aritmetika section styling */
+.deret-aritmetika {
+  background-color: #fff;
+  padding: 30px;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.deret-aritmetika h2 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #007bff;
+}
+
+.deret-aritmetika-content h3 {
+  margin-bottom: 10px;
+  font-size: 1.5em;
+  color: #007bff;
+}
+
+.deret-aritmetika-content ul {
+  list-style: disc;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.deret-aritmetika-content ul li {
+  margin-bottom: 10px;
+}
+
+.formula {
+  background-color: #f8f9fa;
+  border-left: 5px solid #007bff;
+  padding: 15px;
+  margin: 20px 0;
+  font-size: 1.2em;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.example {
+  background-color: #f1f1f1;
+  border-left: 5px solid #28a745;
+  padding: 15px;
+  margin: 20px 0;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.example p {
+  margin-bottom: 10px;
+}
+
+.example p:last-child {
+  margin-bottom: 0;
+}
+
+/* Deret Geometri section styling */
+
+.deret-geometri {
+  background-color: #fff;
+  padding: 30px;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.deret-geometri h2 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #007bff;
+}
+
+.deret-geometri-content h3 {
+  margin-bottom: 10px;
+  font-size: 1.5em;
+  color: #007bff;
+}
+
+.deret-geometri-content ul {
+  list-style: disc;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.deret-geometri-content ul li {
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 580px) {
+  main {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
