@@ -120,7 +120,7 @@ const Project = () => {
                 <input
                   className="calculate-section-input"
                   type="text"
-                  placeholder="Masukan Deret Anda"
+                  placeholder="Contoh 1,2,3,4"
                   onChange={handleChange}
                   value={temp}
                 />
@@ -265,7 +265,7 @@ const Project = () => {
                 <input
                   className="calculate-section-input"
                   type="text"
-                  placeholder="Masukan Deret Anda"
+                  placeholder="Contoh 1,A,B,C,5"
                   onChange={handleChange}
                   value={temp}
                 />

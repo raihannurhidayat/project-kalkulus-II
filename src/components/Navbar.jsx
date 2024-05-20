@@ -13,8 +13,8 @@ const Navbar = () => {
   const [showNavbar, setShowNavbar] = useState(false);
   const [landingPage, setLandingPage] = useState(true);
 
-  const location = useLocation()
-  
+  const location = useLocation();
+
   const navbarRef = useRef(null);
 
   const handleShowNavbar = () => {
@@ -44,28 +44,34 @@ const Navbar = () => {
             <ul>
               <li>
                 <NavLink onClick={() => setLandingPage(true)} to="/">
-                  Home
+                  <HashLink smooth to="#home">
+                    Home
+                  </HashLink>
                 </NavLink>
               </li>
-              {landingPage && location.pathname !== "/materi/aritmatika" && location.pathname !== "/materi/geometri" && location.pathname !== "/aritmatika"  && location.pathname !== "/geometri" && (
-                <>
-                  <li>
-                    <HashLink smooth to="#about">
-                      About
-                    </HashLink>
-                  </li>
-                  <li>
-                    <HashLink smooth to="#feature">
-                      Feature
-                    </HashLink>
-                  </li>
-                  <li>
-                    <HashLink smooth to="#ourteam">
-                      Our Team
-                    </HashLink>
-                  </li>
-                </>
-              )}
+              {landingPage &&
+                location.pathname !== "/materi/aritmatika" &&
+                location.pathname !== "/materi/geometri" &&
+                location.pathname !== "/aritmatika" &&
+                location.pathname !== "/geometri" && (
+                  <>
+                    <li>
+                      <HashLink smooth to="#about">
+                        About
+                      </HashLink>
+                    </li>
+                    <li>
+                      <HashLink smooth to="#feature">
+                        Feature
+                      </HashLink>
+                    </li>
+                    <li>
+                      <HashLink smooth to="#ourteam">
+                        Our Team
+                      </HashLink>
+                    </li>
+                  </>
+                )}
 
               <li>
                 <NavLink onClick={() => setLandingPage(false)} to="/aritmatika">

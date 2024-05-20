@@ -15,6 +15,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import gsap from "gsap";
 import TextPlugin from "gsap/TextPlugin";
+import { HashLink } from "react-router-hash-link";
 
 gsap.registerPlugin(TextPlugin);
 
@@ -54,7 +55,7 @@ const LandingPage = () => {
   return (
     <>
       {/* Into section start */}
-      <div className="introhal wrap-padding">
+      <div className="introhal wrap-padding" id="home">
         <div className="wrapper-hero-section">
           <div
             className="hero-section"
@@ -63,7 +64,9 @@ const LandingPage = () => {
           >
             <h1 className="judul" ref={titleRef}></h1>
             <p ref={textRef}></p>
-            <a href="#kalkulator">Coba Sekarang</a>
+            <HashLink smooth to="#feature">
+              Coba Sekarang
+            </HashLink>
           </div>
           <div
             className="hero-image"
