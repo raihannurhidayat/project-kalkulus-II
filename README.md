@@ -1,19 +1,12 @@
-# React + Vite
+# Project Kalkulus II
+Project ini dibuat untuk memenuhi tugas akhir dari mata kuliah kalkulus II.
+# About Project
+Project ini adalah project membuah website yang memiliki fungsi untuk menyelesaikan permasalahan pada salah satu materi kalkulus II. Dimana kami sebagai kelompok 4 mengambil materi deret aritmatika dan deret geometri. web ini sudah memiliki fitur untuk menyelesaikan permasalahan dari deret seperti mencari beda dari tiap suku, mencari nilai suku, mencari jumlah suku, mencari rata-rata dan mencari nilai yang berada di antara suatu deret
+# requirement
+1.install git
+2.install nodejs
+3.daftar akun github
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-
-Cara Menggunakan Menjalankan Code ini di laptop kalian
-
-# Syarat
--install git
--install nodejs
-
-# Langkah-Langkah
+# Step
 1. buka terminal di folder yang akan menyimpan file ini
 2. ketik git clone
