@@ -43,11 +43,11 @@ const Navbar = () => {
           <div className={`nav-elements  ${showNavbar && "active"}`}>
             <ul>
               <li>
-                <NavLink onClick={() => setLandingPage(true)} to="/">
-                  <HashLink smooth to="#home">
+                <HashLink smooth to="#home">
+                  <NavLink onClick={() => setLandingPage(true)} to="/">
                     Home
-                  </HashLink>
-                </NavLink>
+                  </NavLink>
+                </HashLink>
               </li>
               {landingPage &&
                 location.pathname !== "/materi/aritmatika" &&
