@@ -11,9 +11,18 @@ Project ini adalah project membuah website yang memiliki fungsi untuk menyelesai
 
 # Step
 1. buka terminal di folder yang akan menyimpan file ini
-2. ketik git clone https://github.com/raihannurhidayat/project-kalkulus-II.git
-3. ketik npm install
-4. ketik npm run dev
+2. ketik
+   ```
+   git clone https://github.com/raihannurhidayat/project-kalkulus-II.git
+   ```
+3. ketik
+   ```
+   npm install
+   ```
+4. ketik
+   ```
+   npm run dev
+   ```
 
 # Contibutors
 1. Rosi Saraswati A
