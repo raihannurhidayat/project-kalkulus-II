@@ -87,17 +87,13 @@ const Project = () => {
     <>
       {alert && (
         <div className="wrapper-alert">
-          <Alert setAlert={setAlert} />
+          <Alert setAlert={setAlert} deret="Aritmatika" />
         </div>
       )}
       {display === "aritmatika" && (
-        <div
-          data-aos="fade-right"
-          data-aos-duration="1000"
-          className={`container ${alert && "blur"}`}
-        >
+        <div className={`container ${alert && "blur"}`}>
           {/* calculate start */}
-          <div className="wrap">
+          <div className="wrap" data-aos="fade-right" data-aos-duration="1000">
             <div className="calculate-section">
               <BadgeNav
                 display={display}
@@ -238,13 +234,9 @@ const Project = () => {
       )}
 
       {display === "diantara" && (
-        <div
-          data-aos="fade-right"
-          data-aos-duration="1500"
-          className={`container ${alert && "blur"}`}
-        >
+        <div className={`container ${alert && "blur"}`}>
           {/* Diantara start */}
-          <div className="wrap">
+          <div className="wrap" data-aos="fade-right" data-aos-duration="1500">
             <div className="calculate-section">
               <BadgeNav
                 setDisplay={setDisplay}

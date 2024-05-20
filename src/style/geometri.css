@@ -156,6 +156,23 @@
   margin-top: 12px;
 }
 
+.choose {
+  background-color: green;
+}
+
+.wrapper-alert {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: fixed;
+  inset: 0px;
+  z-index: 50;
+  outline: none;
+}
+
+
 @media screen and (max-width: 580px) {
   .DeretGeo {
     width: 90%;
